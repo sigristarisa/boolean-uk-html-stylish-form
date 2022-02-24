@@ -10,6 +10,51 @@
     <title>Stylish Form</title>
   </head>
   <body>
-    hi
+    <div>
+      <h1>Say Hello!</h1>
+      <form>
+        <label for="name">Your Name</label>
+        <input
+          type="text"
+          value="name"
+          placeholder="Enter your name"
+          id="name"
+          required
+        />
+        <label for="email">Email</label>
+        <input
+          type="email"
+          value="email"
+          placeholder="Enter your email address"
+          id="email"
+          required
+        />
+        <label for="pizza">Which Pizza?</label>
+        <select id="pizza" required>
+          <option value="">Choose...</option>
+          <option value="pepperoni">Pepperoni</option>
+          <option value="margerita">Margerita</option>
+          <option value="marinara">Marinara</option>
+          <option value="quatrofromaggi">Quatro Fromaggi</option>
+        </select>
+        <label for="number">Quantity</label>
+        <input
+          type="number"
+          value="number"
+          id="number"
+          min="1"
+          max="5"
+          required
+        />
+        <label for="request">Requests (optional)</label>
+        <input
+          type="text"
+          value="request"
+          placeholder="Enter requests "
+          id="request"
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
