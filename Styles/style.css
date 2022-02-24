@@ -60,21 +60,13 @@ select:focus {
   outline: none;
 }
 
-button {
-  height: 50px;
+a {
   font-family: "Montserrat", sans-serif;
-  font-size: 1em;
-  font-weight: 600;
-  color: var(--sub-primary-clr);
-  background-color: var(--primary-clr);
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
+  color: var(--primary-clr);
 }
 
-button:hover {
-  color: var(--primary-clr);
-  background-color: var(--sub-primary-clr);
+a:hover {
+  color: var(--accent-clr);
 }
 
 /* --- MAIN STYLES --- */
@@ -84,8 +76,30 @@ button:hover {
   height: 90vh;
   border-radius: 30px;
   background-color: white;
+
+  display: grid;
+  place-items: center;
 }
 
 #request {
   height: 200px;
+}
+
+#submit {
+  height: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: var(--sub-primary-clr);
+  background-color: var(--primary-clr);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+
+  border: red;
+}
+
+#submit:hover {
+  color: var(--primary-clr);
+  background-color: var(--sub-primary-clr);
 }
