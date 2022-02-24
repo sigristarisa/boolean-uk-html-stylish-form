@@ -1,0 +1,8 @@
+.centered {
+  margin: 0 auto;
+}
+
+.grid-auto-flow__row {
+  display: grid;
+  grid-auto-flow: row;
+}
